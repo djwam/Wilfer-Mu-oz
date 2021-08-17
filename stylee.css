@@ -1,0 +1,273 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:'Poppins', sans-serif;
+    background: url(images/hero_image.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.grid{
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+header {
+    width: 100%;
+}
+
+.menu ul{
+    margin: 0;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    animation: moverIzquierda 1s ease-in;
+}
+
+.menu li:hover{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+.menu li a{
+    display: block;
+    padding:20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.menu i{
+    display: flex;
+    width: 80px;
+}
+
+.menu2 ul{
+    margin: 0;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu2 img{
+    display: block;
+    padding:0;
+    align-content: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.menu2 img{
+    display: flex;
+    width: 60px;
+}
+
+.menu3 ul{
+    margin: 3px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu3 i:hover{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+.menu3 i {
+    display: block;
+    padding:20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu3 i{
+    display: flex;
+    width: 55px;
+}
+
+.container{
+    display: flex;
+    font-family:'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-family:'Poppins', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px gray;
+    animation: moverDerecha 1s ease-in;
+}
+
+.wrap{
+    display: flex;
+    font-family:'Poppins', sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn {
+    outline: none;
+    display: block;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    padding: 15px 40px;
+    border-radius: 30px;
+    background: #bf5d0c;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    font-family:'Poppins', sans-serif;
+    justify-content: center;
+    animation: moverArriba 1s ease-in;
+}
+
+.btn:hover,
+.btn:focus{
+    background: rgb(191,93,12);
+}
+
+.btn:active{
+    background: rgb(191,93,12);
+}
+
+.info {
+    display: flex;
+    background: #944800;
+    font-family:'Poppins', sans-serif;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh;
+    color: coral;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.menu4 ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    
+}
+
+.menu4 li:hover{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+.menu4 li a{
+    display: block;
+    padding:10px;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.menu4 i{
+    display: flex;
+    width: 80px;
+}
+
+.menu5 p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.menu5 ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.menu5 i:hover{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+.menu5 i {
+    display: block;
+    padding:14px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu5 i{
+    display: flex;
+    width: 200px;
+}
+
+.menu6 ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu6 i:hover{
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+.menu6 i {
+    display: block;
+    padding:14px;
+    color: #fff;
+    text-align: left;
+    text-decoration: none;  
+}
+
+.menu6 i{
+    display: flex;
+    width: 45px;
+}
+
+@keyframes moverIzquierda {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha {
+    0%{
+        opacity: 0;
+        transform: translatex(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverArriba {
+    0%{
+        opacity: 0;
+        transform: translatey(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
